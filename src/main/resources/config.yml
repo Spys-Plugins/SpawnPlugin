@@ -17,3 +17,4 @@ TpedByPlayer: "&4You have been teleported to spawn by &9%player's display name%&
 TpedPlayerWorked: "&6Teleporting &c%player's display name%&6 to spawn..."
 UnsetSpawnLocation: "&4Spawn location has been unset."
 TpedToSpawn: "&aTeleporting... in 5 seconds"
+TooManyArgs: "&cToo many arguments."

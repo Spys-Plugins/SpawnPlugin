@@ -29,11 +29,16 @@ dependencies {
 group = "dev.cosmics"
 version = "1.0"
 description = "SpawnPlugin"
-java.sourceCompatibility = JavaVersion.VERSION_1_8
 
 publishing {
     publications.create<MavenPublication>("maven") {
         from(components["java"])
+    }
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
     }
 }
 
