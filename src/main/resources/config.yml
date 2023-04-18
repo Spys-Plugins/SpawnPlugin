@@ -1,0 +1,19 @@
+#teleport players to spawn whenever they join
+TPJoin: false
+#announce the new players when they join for the first time
+FirstJoin: true
+#hide join Messages
+JoinMessage: true
+#hide quit Messages
+QuitMessage: true
+#Teleport the player to spawn when they die
+TPDeath: true
+
+FirstJoinMessage: "&dPlease welcome player &9%player's display name% &dhe/she have joined the server for the first time."
+NoPermission: "&cYou do not have permission to use this command."
+SetSpawnLocation: "&4Spawn location has been set."
+SpawnNotSet: "&cSpawn location has not been set."
+TpedByPlayer: "&4You have been teleported to spawn by &9%player's display name%&4."
+TpedPlayerWorked: "&6Teleporting &c%player's display name%&6 to spawn..."
+UnsetSpawnLocation: "&4Spawn location has been unset."
+TpedToSpawn: "&aTeleporting... in 5 seconds"
