@@ -21,7 +21,7 @@ import static dev.cosmics.hardcoreplugin.ChatUtils.color;
 import static org.bukkit.Bukkit.getServer;
 
 public class SpawnCommands implements CommandExecutor {
-    private FileConfiguration config;
+    private final FileConfiguration config;
     private File file;
     public SpawnCommands(FileConfiguration config, File file) {
         this.config = config;
@@ -71,7 +71,7 @@ public class SpawnCommands implements CommandExecutor {
                 Player player = (Player) sender;
                 player.sendMessage(color(config.getString("TpedToSpawn")));
                 //Play a sound in increasing pitch once every second for 5 seconds
-                final AtomicInteger pitch = new AtomicInteger(0);
+                final AtomicInteger pitch = new AtomicInteger();
                 final AtomicInteger task = new AtomicInteger();
                 task.set(Bukkit.getScheduler().scheduleSyncRepeatingTask(HardcorePlugin.getPlugin(HardcorePlugin.class), () -> {
                     player.playSound(player.getLocation(), Sound.BLOCK_NOTE_BLOCK_PLING, 1F, pitch.getAndIncrement() * 0.2f + 1);
